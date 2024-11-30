@@ -43,7 +43,7 @@ elif cat /proc/version | grep -Eqi "debian"; then
     release="debian"
 elif cat /proc/version | grep -Eqi "ubuntu"; then
     release="ubuntu"
-elif cat /proc/version | grep -Eqi "centos|red hat|redhat"; then
+elif cat /proc/version | grep -Eqi "centos|red hat|redhat|OpenCloudOS"; then
     release="centos"
 else
     LOGE "未检测到系统版本，请联系脚本作者！\n" && exit 1
